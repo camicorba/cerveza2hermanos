@@ -597,11 +597,19 @@ a.nav-link:hover {
   padding-left: 10px;
 }
 
+.footer-columna ul {
+  list-style-position: outside;
+}
+
 .footer-columna__titulo {
   font-size: 1.5em;
   font-family: 'Bebas Neue', sans-serif;
   border-left: 1px solid #dd0443;
   padding-left: 5px;
+}
+
+.footer-columna__item {
+  padding: 5px 15px;
 }
 
 .footer-columna__redes {
@@ -610,6 +618,7 @@ a.nav-link:hover {
 
 .footer__link {
   text-decoration: none;
+  color: white;
 }
 
 .footer-item__link {
@@ -628,10 +637,13 @@ a.nav-link:hover {
   text-decoration: none;
 }
 
+.footer__redes {
+  padding: 5px 20px;
+}
+
 .footer__li--cp {
   list-style: none;
   text-decoration: none;
-  padding: 10px 0px;
 }
 
 .footer__iconos {

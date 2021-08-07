@@ -84,7 +84,7 @@ a.nav-link:hover{
     left: 300px;
     max-width: fit-content;
 }
-
+// -------- RESPONSIVE --------- //
 
 @media only screen and (max-width: 767px){
     .navbar{
@@ -486,6 +486,9 @@ a.nav-link:hover{
 .footer-columna{
     flex-direction: row;
     padding-left: 10px;
+    ul{
+        list-style-position: outside;
+    }
     }
 .footer-columna__titulo{
     font-size: 1.5em;
@@ -493,11 +496,15 @@ a.nav-link:hover{
     border-left: 1px solid #dd0443;;
     padding-left: 5px;
     }
+.footer-columna__item{
+    padding: 5px 15px;
+}
  .footer-columna__redes{
      display: block;
  }
 .footer__link{
     text-decoration: none;
+    color: white;
     }  
 .footer-item__link{
     display: block;
@@ -512,10 +519,12 @@ a.nav-link:hover{
     list-style: none;
     text-decoration: none;
 }
+.footer__redes{
+    padding: 5px 20px;
+}
 .footer__li--cp{
     list-style: none;
     text-decoration: none;
-    padding: 10px 0px;
 }
 
 .footer__iconos{
