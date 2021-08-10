@@ -408,6 +408,21 @@ a.nav-link:hover{
   .parrafo--card-der{
       text-align: left;
   }
+
+/*------------ SECCION REDES - INDEX -------- */
+.seccion-redes{
+    text-decoration: none;
+}
+.seccion-redes__li{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 40px;
+}
+.seccion-redes__icono{
+    width: 80px;
+}
+
+
 /* ------ SECTION SERVICIOS ------ */
 .seccion-flex{
     width: 100%;
