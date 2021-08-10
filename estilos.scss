@@ -31,7 +31,7 @@ body{
 .seccion__titulo {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2.5rem;
-    color: #dd0443;
+    color: $primario;
 }
 .seccion__titulo--secundario {
     font-family: 'Bebas Neue', sans-serif;
@@ -49,7 +49,7 @@ body{
     position: absolute;
     width: 500px;
     height: 2px;
-    background-color: black;
+    background-color: $secundario;
     top: 0.5em;
 }
  
@@ -62,17 +62,17 @@ body{
 .seccion__titulo--grande {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 5rem;
-    color: #dd0443;
+    color: $primario;
     border-right:  1px solid black;
 }
 .seccion__parrafo{
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: $secundario;
     font-size: 1.25em;
 }
 .seccion__parrafo--secundario{
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: $secundario;
     font-size: 1em;
 }
 .contenedor-parrafo{
@@ -82,12 +82,13 @@ body{
 
 /* MENU DE NAVEGACION */
 a.nav-link{
-    color: black;
+    color: $secundario;
     padding-left: 20px;
 }
 a.nav-link:hover{
-    color: #dd0443;
+    color: $primario;
 }
+
 .navbar{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.2rem;
@@ -152,7 +153,65 @@ a.nav-link:hover{
     .seccion-sb__iconos-xl{
         display: none;
     }
-   
+    .seccion-flex{
+        flex-direction: row;
+        flex-wrap: wrap;
+        .seccion-flex__img{
+            flex-basis: 100%;
+        }
+        .seccion-flex__texto{
+            flex-basis: 100%;
+            height: auto;
+        }
+    }
+    #galeriaGrid{
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+    }
+   .galleryImg1{
+       grid-column-start: 1;
+       grid-column-end: 2;
+   }
+   .galleryImg2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+   }
+   .galleryImg3{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+   }
+   .galleryImg4{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+   }
+   .galleryImg5{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+   }
+   .galleryImg6{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+   }
+   .galleryImg7{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+   }
+   .galleryImg8{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px){
     .navbar{
