@@ -1,0 +1,33 @@
+.pagina-404{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    align-items: center;
+}
+.pagina-404__img{
+
+    flex-basis: 300px;
+}
+.img404{
+    width: 300px;
+    height: auto;
+}
+.texto{
+    flex-basis: 300px;
+    align-items: center;
+    margin-top: 20px;
+    h1{
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 50px;
+    }
+    h2{
+        font-family:'Bebas Neue', sans-serif;
+        font-size: 30px;
+    }
+    p{
+        font-family: 'Montserrat', sans-serif;
+    }
+}
