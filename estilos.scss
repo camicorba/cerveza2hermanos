@@ -150,8 +150,27 @@ a.nav-link:hover{
         max-width: 50% !important;
         height: auto;
     }
+    .seccion-sb__caja{
+        flex-direction: row;
+        height: auto;
+        justify-content: start;
+        align-items: flex-start;
+    }
     .seccion-sb__iconos-xl{
         display: none;
+        width: 2px;
+    }
+    .seccion-sb__iconos{
+        flex-basis: 2px;
+        display: none;
+    }
+    .seccion-sb__paso{
+        flex-basis: 30%;
+        align-items: flex-start;
+    }
+    .seccion-sb__texto{
+        flex-basis: 70%;
+        width: 200px;
     }
     .seccion-flex{
         flex-direction: row;
@@ -204,6 +223,27 @@ a.nav-link:hover{
         grid-column: 1/4;
         grid-row: 8/9;
     }
+    #flexContacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .contacto{
+        flex-basis: 100%;
+        padding-bottom: 20px;
+    
+    }
+    .ubicacion{
+        flex-basis: 100%;
+    }
+    .footer{
+        justify-content: left;
+    }
+    .footer-columna{
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
+    
 
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px){
@@ -320,22 +360,20 @@ a.nav-link:hover{
     margin: 20px 20px;
     padding: 0px 20px;
     background-color:  #e3e4e5;
-    height: 220px;
+    height: auto;
 
 }
 .seccion-sb__paso{
-    flex-basis: 200px;
+    flex-basis: 20%;
     text-align: center;
-
-
 }
 .seccion-sb__texto{
-    flex-basis: 600px;
+    flex-basis: 50%;
     text-align: left;
     padding-left: 30px;
 }
 .seccion-sb__iconos{
-    flex-basis: 300px;
+    flex-basis: 30%;
     text-align: center;
 }
 .seccion-sb__iconos-xl{
@@ -679,15 +717,19 @@ a.nav-link:hover{
 /* ----- SECCION CONTACTOS -----*/
 #flexContacto{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 .contacto{
-    flex-basis: 550px;
+    flex-basis: 50%;
     padding-bottom: 20px;
 
+}
+.ubicacion{
+    flex-basis: 50%;
+}
+.ubicacion__mapa{
+    width: 100%;
 }
 
 /* ------ FOOTER -------*/

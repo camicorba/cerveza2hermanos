@@ -1,0 +1,20 @@
+{
+  "name": "cerveza2hermanos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camicorba/cerveza2hermanos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camicorba/cerveza2hermanos/issues"
+  },
+  "homepage": "https://github.com/camicorba/cerveza2hermanos#readme"
+}
