@@ -756,6 +756,10 @@ a.nav-link:hover {
   width: 80px;
 }
 
+.seccion-redes__icono:hover {
+  width: 90px;
+}
+
 /* ------ SECTION SERVICIOS ------ */
 .seccion-flex {
   width: 100%;
