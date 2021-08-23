@@ -89,16 +89,13 @@ a.nav-link{
 a.nav-link:hover{
     color: $primario;
 }
-
 .navbar{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.2rem;
     letter-spacing: 1px;  
     position: sticky;
     top: -10px;
-
 }
-
 .banner-contenido{
     position: relative;
 }
@@ -158,11 +155,9 @@ a.nav-link:hover{
     .banner-contenido img{
         display: none;
     }
-
     header{
         height: 600px;
     }
-    
     .main1{
         margin-top: 50px;
     }
