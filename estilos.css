@@ -99,18 +99,18 @@ body {
 .seccion__titulo--decor::after, .seccion__titulo--decor::before {
   content: "";
   position: absolute;
-  width: 500px;
+  width: 400px;
   height: 2px;
   background-color: black;
   top: 0.5em;
 }
 
 .seccion__titulo--decor::before {
-  left: -500px;
+  left: -400px;
 }
 
 .seccion__titulo--decor::after {
-  right: -500px;
+  right: -400px;
 }
 
 .seccion__titulo--grande {
@@ -339,6 +339,20 @@ a.nav-link:hover {
     -ms-grid-row-span: 1;
     grid-row: 6/7;
   }
+  .seccion__titulo--decor::after, .seccion__titulo--decor::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 2px;
+    background-color: black;
+    top: 0.5em;
+  }
+  .seccion__titulo--decor::before {
+    left: -250px;
+  }
+  .seccion__titulo--decor::after {
+    right: -250px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -543,6 +557,34 @@ a.nav-link:hover {
   }
   #encabezado2 {
     height: 400px;
+  }
+  .seccion__titulo--decor::after, .seccion__titulo--decor::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    top: 0.5em;
+  }
+  .seccion__titulo--decor::before {
+    left: -100px;
+  }
+  .seccion__titulo--decor::after {
+    right: -100px;
+  }
+  .seccion {
+    margin: 10px 5px;
+    padding: 5px 0px;
+  }
+  .seccion-sb {
+    margin: 10px 50px;
+    padding: 50px 0px;
+  }
+  .contenedor-parrafo {
+    margin: 10px 50px;
+  }
+  .col-md-4 {
+    max-width: 450px;
   }
 }
 
@@ -758,6 +800,54 @@ a.nav-link:hover {
 
 .seccion-redes__icono:hover {
   width: 90px;
+}
+
+/* -------- SECCION NOSOTROS ------- */
+.card-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card-equipo {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .25rem;
+  max-width: 500px;
+}
+
+.card-equipo__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-equipo__texto {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+.card-equipo__imagen {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+}
+
+.card-equipo__titulo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.25em;
+  text-align: center;
+  letter-spacing: 2px;
 }
 
 /* ------ SECTION SERVICIOS ------ */
