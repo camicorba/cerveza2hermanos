@@ -395,9 +395,7 @@ a.nav-link:hover{
     .contenedor-parrafo{
         margin: 10px 50px;
     }
-    .col-md-4{
-        max-width: 450px;
-    }
+
 
 
 }
@@ -578,6 +576,7 @@ a.nav-link:hover{
 .card-flex{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .card-equipo{
@@ -595,6 +594,7 @@ a.nav-link:hover{
 }
 .card-equipo__imagen{
     flex-basis: 55%;
+
 }
 .card-equipo__titulo{
     font-family: 'Bebas Neue', sans-serif;

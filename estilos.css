@@ -583,9 +583,6 @@ a.nav-link:hover {
   .contenedor-parrafo {
     margin: 10px 50px;
   }
-  .col-md-4 {
-    max-width: 450px;
-  }
 }
 
 /* ------- BANNER VERTICAL - INDEX -------*/
@@ -811,6 +808,8 @@ a.nav-link:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
