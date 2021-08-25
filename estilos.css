@@ -339,6 +339,14 @@ a.nav-link:hover {
     -ms-grid-row-span: 1;
     grid-row: 6/7;
   }
+  .galleryItem:hover {
+    -webkit-transform: scale(none);
+            transform: scale(none);
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    -webkit-filter: grayscale(0.5);
+            filter: grayscale(0.5);
+  }
   .seccion__titulo--decor::after, .seccion__titulo--decor::before {
     content: "";
     position: absolute;
@@ -411,13 +419,18 @@ a.nav-link:hover {
             align-items: flex-start;
   }
   .seccion-sb__iconos-xl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     display: none;
-    width: 2px;
   }
   .seccion-sb__iconos {
-    -ms-flex-preferred-size: 2px;
-        flex-basis: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     display: none;
+    -ms-flex-preferred-size: 0%;
+        flex-basis: 0%;
   }
   .seccion-sb__paso {
     -ms-flex-preferred-size: 30%;
@@ -429,7 +442,7 @@ a.nav-link:hover {
   .seccion-sb__texto {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
-    width: 200px;
+    overflow: visible;
   }
   .seccion-flex {
     -webkit-box-orient: horizontal;
@@ -520,6 +533,14 @@ a.nav-link:hover {
     -ms-grid-row: 8;
     -ms-grid-row-span: 1;
     grid-row: 8/9;
+  }
+  .galleryItem:hover {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    transition: none;
+    -webkit-filter: grayscale(0.5);
+            filter: grayscale(0.5);
   }
   #flexContacto {
     display: -webkit-box;
@@ -990,8 +1011,10 @@ a.nav-link:hover {
   -webkit-column-gap: 10px;
           column-gap: 10px;
   row-gap: 10px;
-  width: 100%;
+  width: 95%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .galleryItem {

@@ -217,6 +217,12 @@ a.nav-link:hover{
         grid-column: 1/3;
         grid-row: 6/7;
     }
+    .galleryItem:hover{
+        transform: scale(none);
+        transition: 0.8s;
+        filter: grayscale(0.5);
+        
+    }
     .seccion__titulo--decor::after, .seccion__titulo--decor::before{
         content: "";
         position: absolute;
@@ -276,12 +282,13 @@ a.nav-link:hover{
         align-items: flex-start;
     }
     .seccion-sb__iconos-xl{
+        display: flex;
         display: none;
-        width: 2px;
     }
     .seccion-sb__iconos{
-        flex-basis: 2px;
+        display: flex;
         display: none;
+        flex-basis: 0%;
     }
     .seccion-sb__paso{
         flex-basis: 30%;
@@ -289,7 +296,7 @@ a.nav-link:hover{
     }
     .seccion-sb__texto{
         flex-basis: 70%;
-        width: 200px;
+        overflow: visible;
     }
     .seccion-flex{
         flex-direction: row;
@@ -341,6 +348,11 @@ a.nav-link:hover{
     .galleryImg8{
         grid-column: 1/4;
         grid-row: 8/9;
+    }
+    .galleryItem:hover{
+        transform: none;
+        transition: none;
+        filter: grayscale(0.5);
     }
     #flexContacto{
         display: flex;
@@ -714,8 +726,10 @@ a.nav-link:hover{
     display: grid;
     column-gap: 10px;
     row-gap: 10px;
-    width: 100%;
+    width: 95%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .galleryItem{
     min-width: 100px;
