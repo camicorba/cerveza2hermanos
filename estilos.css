@@ -124,6 +124,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: black;
   font-size: 1.25em;
+  padding: 0px 15px;
 }
 
 .seccion__parrafo--secundario {
@@ -136,7 +137,7 @@ body {
   margin: 20px 100px;
 }
 
-/* MENU DE NAVEGACION */
+/* ------ MENU DE NAVEGACION ------- */
 a.nav-link {
   color: black;
   padding-left: 20px;
@@ -155,6 +156,7 @@ a.nav-link:hover {
   top: -10px;
 }
 
+/* ------ HEADER - SECCION INDEX - OTRAS SECCIONES ------- */
 .banner-contenido {
   position: relative;
 }
@@ -171,6 +173,621 @@ a.nav-link:hover {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+}
+
+/* ------ ENCABEZADOS DE PAGINA - OTRAS SECCIONES ------ */
+#encabezado2 .tituloPortada {
+  position: absolute;
+  top: 300px;
+  left: 500px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+}
+
+#encabezado2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url(image/P2.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(image/P2.jpg);
+  background-position: right;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+
+.textoHeader {
+  position: absolute;
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+  font-size: 6em;
+  text-align: center;
+  top: 250px;
+  left: 300px;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+@-webkit-keyframes aparecer {
+  100% {
+    opacity: 100%;
+  }
+  0% {
+    opacity: 0%;
+  }
+}
+
+@keyframes aparecer {
+  100% {
+    opacity: 100%;
+  }
+  0% {
+    opacity: 0%;
+  }
+}
+
+.row {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card-img-top {
+  height: auto;
+  width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.col {
+  width: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* ------- BANNER VERTICAL - INDEX -------*/
+.seccion-sb__caja {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 20px;
+  padding: 0px 20px;
+  background-color: #e3e4e5;
+  height: auto;
+}
+
+.seccion-sb__paso {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  text-align: center;
+}
+
+.seccion-sb__texto {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.seccion-sb__iconos {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  text-align: center;
+}
+
+.seccion-sb__iconos-xl {
+  width: 100px;
+}
+
+/* ----- BANNER HORIZONALES - INDEX - PRODUCTOS --- */
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+  margin: 20px;
+  background-color: #e3e4e5;
+}
+
+.banner-caja {
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+  text-align: center;
+  padding: 15px;
+}
+
+.banner-caja__iconos {
+  height: 50px;
+  width: 50px;
+}
+
+.banner-caja__titulo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.banner-caja__parrafo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+/*--------- APARTADO SERVICIOS - SECCION INDEX ------- */
+.blog-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 800px;
+  height: 300px;
+  margin: 1rem auto;
+  margin-bottom: 1.6%;
+  background: white;
+  line-height: 1.4;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.meta {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  position: relative;
+  z-index: 0;
+  width: 370px;
+  height: 300px;
+}
+
+.foto {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 370px;
+}
+
+.servicio1 {
+  background-image: url(image/Home1.jpg);
+}
+
+.servicio2 {
+  background-image: url(image/home2.jpg);
+}
+
+.description {
+  padding: 1rem;
+  background: #e3e4e5;
+  position: relative;
+  z-index: 1;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.description h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  line-height: 1;
+  margin: 0;
+  font-size: 1.7rem;
+  text-align: start;
+}
+
+.read-more-der a, .read-more-iz a {
+  display: inline-block;
+  position: relative;
+}
+
+.read-more-der {
+  text-align: right;
+}
+
+.read-more-iz {
+  text-align: left;
+}
+
+.parrafo--card-der, .parrafo--card-izq {
+  position: relative;
+  margin: 1rem 0 0;
+}
+
+.parrafo--card-der:first-of-type, .parrafo--card-izq:first-of-type {
+  margin-top: 1.25rem;
+}
+
+.parrafo--card-der:first-of-type:before, .parrafo--card-izq:first-of-type:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: #dd0443;
+  width: 35px;
+  top: -0.75rem;
+  border-radius: 3px;
+}
+
+.parrafo--card-izq {
+  text-align: right;
+}
+
+.parrafo--card-der {
+  text-align: left;
+}
+
+/*------------ APARTADO REDES - SECCION INDEX -------- */
+.seccion-redes {
+  text-decoration: none;
+}
+
+.seccion-redes__li {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0px 40px;
+}
+
+.seccion-redes__icono {
+  width: 80px;
+}
+
+.seccion-redes__icono:hover {
+  width: 90px;
+}
+
+/* -------- SECCION NOSOTROS ------- */
+.card-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card-equipo {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .25rem;
+  max-width: 500px;
+}
+
+.card-equipo__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-equipo__texto {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  padding-right: 10px;
+}
+
+.card-equipo__imagen {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+}
+
+.card-equipo__titulo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.25em;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+/* ------ SECCION SERVICIOS ------ */
+.seccion-flex {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 30px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px dotted black;
+}
+
+.seccion-flex__img {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  height: 300px;
+}
+
+.seccion-flex__texto {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  height: 300px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 10px 20px;
+}
+
+.casamiento {
+  background-image: url(image/S2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.egreso {
+  background-image: url(image/S1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cumple {
+  background-image: url(image/S3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.evento {
+  background-image: url(image/S4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* GRID SECCION SERVICIOS*/
+.galeriaGrid {
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+  width: 95%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.galleryItem {
+  min-width: 100px;
+  min-height: 300px;
+  background-color: gray;
+}
+
+.galleryImg1 {
+  background-color: gray;
+  background-image: url(image/Galeriah2-min.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.galleryImg2 {
+  background-color: gray;
+  background-image: url(image/Galeriah5-min.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.galleryImg3 {
+  background-color: gray;
+  background-image: url(image/Galeriah3-min.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.galleryImg4 {
+  background-color: gray;
+  background-image: url(image/Galeriah7-min.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.galleryImg5 {
+  background-color: gray;
+  background-image: url(image/Galeriav1-min.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.galleryImg6 {
+  background-color: gray;
+  background-image: url(image/Galeriav3-min.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.galleryImg7 {
+  background-color: gray;
+  background-image: url(image/Galeriav2-min.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.galleryImg8 {
+  background-color: gray;
+  background-image: url(image/Galeriah7-min.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.galleryItem:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-filter: grayscale(0.5);
+          filter: grayscale(0.5);
+}
+
+/* -------- SECCION PRODUCTOS --------- */
+.card-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.25em;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.text-card {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 1.1em;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+
+.card-img.overlay {
+  -webkit-filter: grayscale(0.8);
+          filter: grayscale(0.8);
+}
+
+/* ----- SECCION CONTACTOS -----*/
+#flexContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contacto {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-bottom: 20px;
+}
+
+.ubicacion {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.ubicacion__mapa {
+  width: 100%;
+}
+
+/* ------ FOOTER -------*/
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-columna {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 10px;
+}
+
+.footer-columna ul {
+  list-style-position: outside;
+}
+
+.footer-columna__titulo {
+  font-size: 1.5em;
+  font-family: 'Bebas Neue', sans-serif;
+  border-left: 1px solid #dd0443;
+  padding-left: 5px;
+}
+
+.footer-columna__item {
+  padding: 5px 15px;
+}
+
+.footer-columna__redes {
+  display: block;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-item__link {
+  display: block;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer__link:visited {
+  color: white;
+}
+
+.footer__li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer__redes {
+  padding: 5px 20px;
+}
+
+.footer__li--cp {
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer__iconos {
+  width: 25px;
+  height: 25px;
 }
 
 @media only screen and (max-width: 3000px) {
@@ -604,619 +1221,12 @@ a.nav-link:hover {
   .contenedor-parrafo {
     margin: 10px 50px;
   }
-}
-
-/* ------- BANNER VERTICAL - INDEX -------*/
-.seccion-sb__caja {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 20px 20px;
-  padding: 0px 20px;
-  background-color: #e3e4e5;
-  height: auto;
-}
-
-.seccion-sb__paso {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
-  text-align: center;
-}
-
-.seccion-sb__texto {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  text-align: left;
-  padding-left: 30px;
-}
-
-.seccion-sb__iconos {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-  text-align: center;
-}
-
-.seccion-sb__iconos-xl {
-  width: 100px;
-}
-
-/* ----- BANNER HORIZONALES - INDEX - PRODUCTOS --- */
-.banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 30px;
-  margin: 20px;
-  background-color: #e3e4e5;
-}
-
-.banner-caja {
-  -ms-flex-preferred-size: 300px;
-      flex-basis: 300px;
-  text-align: center;
-  padding: 15px;
-}
-
-.banner-caja__iconos {
-  height: 50px;
-  width: 50px;
-}
-
-.banner-caja__titulo {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 25px;
-  text-transform: uppercase;
-}
-
-.banner-caja__parrafo {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-}
-
-/*--------- SERVICIOS INDEX ------- */
-.blog-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  max-width: 800px;
-  height: 300px;
-  margin: 1rem auto;
-  margin-bottom: 1.6%;
-  background: white;
-  line-height: 1.4;
-  font-family: 'Montserrat', sans-serif;
-  border-radius: 5px;
-  overflow: hidden;
-  z-index: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.meta {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
-  position: relative;
-  z-index: 0;
-  width: 370px;
-  height: 300px;
-}
-
-.foto {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 370px;
-}
-
-.servicio1 {
-  background-image: url(image/Home1.jpg);
-}
-
-.servicio2 {
-  background-image: url(image/home2.jpg);
-}
-
-.description {
-  padding: 1rem;
-  background: #e3e4e5;
-  position: relative;
-  z-index: 1;
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
-}
-
-.description h1 {
-  font-family: 'Bebas Neue', sans-serif;
-  line-height: 1;
-  margin: 0;
-  font-size: 1.7rem;
-  text-align: start;
-}
-
-.read-more-der a, .read-more-iz a {
-  display: inline-block;
-  position: relative;
-}
-
-.read-more-der {
-  text-align: right;
-}
-
-.read-more-iz {
-  text-align: left;
-}
-
-.parrafo--card-der, .parrafo--card-izq {
-  position: relative;
-  margin: 1rem 0 0;
-}
-
-.parrafo--card-der:first-of-type, .parrafo--card-izq:first-of-type {
-  margin-top: 1.25rem;
-}
-
-.parrafo--card-der:first-of-type:before, .parrafo--card-izq:first-of-type:before {
-  content: "";
-  position: absolute;
-  height: 5px;
-  background: #dd0443;
-  width: 35px;
-  top: -0.75rem;
-  border-radius: 3px;
-}
-
-.parrafo--card-izq {
-  text-align: right;
-}
-
-.parrafo--card-der {
-  text-align: left;
-}
-
-/*------------ SECCION REDES - INDEX -------- */
-.seccion-redes {
-  text-decoration: none;
-}
-
-.seccion-redes__li {
-  display: inline-block;
-  text-decoration: none;
-  padding: 0px 40px;
-}
-
-.seccion-redes__icono {
-  width: 80px;
-}
-
-.seccion-redes__icono:hover {
-  width: 90px;
-}
-
-/* -------- SECCION NOSOTROS ------- */
-.card-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.card-equipo {
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: .25rem;
-  max-width: 500px;
-}
-
-.card-equipo__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.card-equipo__texto {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
-}
-
-.card-equipo__imagen {
-  -ms-flex-preferred-size: 55%;
-      flex-basis: 55%;
-}
-
-.card-equipo__titulo {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.25em;
-  text-align: center;
-  letter-spacing: 2px;
-}
-
-/* ------ SECTION SERVICIOS ------ */
-.seccion-flex {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 30px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-top: 1px dotted black;
-}
-
-.seccion-flex__img {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  height: 300px;
-}
-
-.seccion-flex__texto {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  height: 300px;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding: 10px 20px;
-}
-
-.casamiento {
-  background-image: url(image/S2.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.egreso {
-  background-image: url(image/S1.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.cumple {
-  background-image: url(image/S3.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.evento {
-  background-image: url(image/S4.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-/* ------ ENCABEZADOS DE PAGINA ------ */
-#encabezado2 .tituloPortada {
-  position: absolute;
-  top: 300px;
-  left: 500px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 50px;
-}
-
-#encabezado2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url(image/P2.jpg);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(image/P2.jpg);
-  background-position: right;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  position: relative;
-}
-
-.textoHeader {
-  position: absolute;
-  font-family: 'Bebas Neue', sans-serif;
-  color: white;
-  font-size: 6em;
-  text-align: center;
-  top: 250px;
-  left: 300px;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-  -webkit-animation-name: aparecer;
-          animation-name: aparecer;
-}
-
-@-webkit-keyframes aparecer {
-  100% {
-    opacity: 100%;
+  .seccion-redes__icono {
+    width: 50px;
   }
-  0% {
-    opacity: 0%;
+  .seccion-redes__icono:hover {
+    width: 55px;
+    padding-bottom: 15px;
   }
-}
-
-@keyframes aparecer {
-  100% {
-    opacity: 100%;
-  }
-  0% {
-    opacity: 0%;
-  }
-}
-
-.row {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.card-img-top {
-  height: auto;
-  width: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.col {
-  width: 300px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-/* GRID SECCION SERVICIOS*/
-.galeriaGrid {
-  background-color: white;
-  display: -ms-grid;
-  display: grid;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-  row-gap: 10px;
-  width: 95%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.galleryItem {
-  min-width: 100px;
-  min-height: 300px;
-  background-color: gray;
-}
-
-.galleryImg1 {
-  background-color: gray;
-  background-image: url(image/Galeriah2-min.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.galleryImg2 {
-  background-color: gray;
-  background-image: url(image/Galeriah5-min.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.galleryImg3 {
-  background-color: gray;
-  background-image: url(image/Galeriah3-min.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.galleryImg4 {
-  background-color: gray;
-  background-image: url(image/Galeriah7-min.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.galleryImg5 {
-  background-color: gray;
-  background-image: url(image/Galeriav1-min.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.galleryImg6 {
-  background-color: gray;
-  background-image: url(image/Galeriav3-min.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.galleryImg7 {
-  background-color: gray;
-  background-image: url(image/Galeriav2-min.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.galleryImg8 {
-  background-color: gray;
-  background-image: url(image/Galeriah7-min.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.galleryItem:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  -webkit-filter: grayscale(0.5);
-          filter: grayscale(0.5);
-}
-
-/* -------- SECCION PRODUCTOS --------- */
-.card-title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.25em;
-  text-align: center;
-  letter-spacing: 2px;
-}
-
-.text-card {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
-  font-size: 1.1em;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 20px;
-}
-
-.card-img.overlay {
-  -webkit-filter: grayscale(0.8);
-          filter: grayscale(0.8);
-}
-
-/* ----- SECCION CONTACTOS -----*/
-#flexContacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.contacto {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  padding-bottom: 20px;
-}
-
-.ubicacion {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-}
-
-.ubicacion__mapa {
-  width: 100%;
-}
-
-/* ------ FOOTER -------*/
-.footer {
-  background-color: black;
-  color: white;
-  padding: 20px 10px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.footer-columna {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding-left: 10px;
-}
-
-.footer-columna ul {
-  list-style-position: outside;
-}
-
-.footer-columna__titulo {
-  font-size: 1.5em;
-  font-family: 'Bebas Neue', sans-serif;
-  border-left: 1px solid #dd0443;
-  padding-left: 5px;
-}
-
-.footer-columna__item {
-  padding: 5px 15px;
-}
-
-.footer-columna__redes {
-  display: block;
-}
-
-.footer__link {
-  text-decoration: none;
-  color: white;
-}
-
-.footer-item__link {
-  display: block;
-  padding: 10px 10px;
-  text-decoration: none;
-  color: white;
-}
-
-.footer__link:visited {
-  color: white;
-}
-
-.footer__li {
-  list-style: none;
-  text-decoration: none;
-}
-
-.footer__redes {
-  padding: 5px 20px;
-}
-
-.footer__li--cp {
-  list-style: none;
-  text-decoration: none;
-}
-
-.footer__iconos {
-  width: 25px;
-  height: 25px;
 }
 /*# sourceMappingURL=estilos.css.map */
