@@ -506,15 +506,17 @@ a.nav-link:hover{
 #flexContacto{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    width: 100%;
 }
 .contacto{
     flex-basis: 50%;
-    padding-bottom: 20px;
+    padding: 15px 20px;
 
 }
 .ubicacion{
     flex-basis: 50%;
+    padding: 15px 20px;
 }
 .ubicacion__mapa{
     width: 100%;

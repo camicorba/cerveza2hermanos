@@ -689,19 +689,22 @@ a.nav-link:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
 }
 
 .contacto {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-bottom: 20px;
+  padding: 15px 20px;
 }
 
 .ubicacion {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  padding: 15px 20px;
 }
 
 .ubicacion__mapa {
